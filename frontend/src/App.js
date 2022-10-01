@@ -1,4 +1,6 @@
 import './App.css';
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './components/Home';
 import Load from './components/Load';
 import Result from './components/Result';
