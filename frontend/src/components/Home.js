@@ -12,6 +12,9 @@ function Home() {
             <input type="text" caption="caption" />
           </label>
         </form>
+        <button>
+            
+        </button>
       </div>
     )
 }
