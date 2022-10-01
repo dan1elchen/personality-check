@@ -1,18 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div>
-      <h1>
-        Personality Check!
-      </h1>
-      <form>
-        <label>
-          Please type in your instagram caption:
-          <input type="text" caption="caption" />
-        </label>
-      </form>
+    <div className="App">
+      <Home></Home>
     </div>
   );
 }
