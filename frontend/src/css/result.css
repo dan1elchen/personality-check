@@ -1,0 +1,12 @@
+.Result {
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%
+}
+
+.username {
+    font-weight: bold;
+    font-family: "Georgia"
+}
