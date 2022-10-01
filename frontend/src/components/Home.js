@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <input type="text" caption="caption" />
           </label>
         </form>
+        <button>Submit</button>
       </div>
     )
 }
