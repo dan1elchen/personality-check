@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Result(props) {
+function Result() {
     return (
         <div class="Result">
             <div class="Profile">
