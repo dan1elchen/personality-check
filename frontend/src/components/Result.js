@@ -1,9 +1,11 @@
 import "../css/Result.css";
 import React from "react";
+import Navbar from "./Navbar";
 
 function Result() {
   return (
     <div class="Result">
+      <Navbar />
       <div class="Profile">
         {/* <img src="default.jpg"></img> */}
         <p class="username">Daniel Chen</p>
