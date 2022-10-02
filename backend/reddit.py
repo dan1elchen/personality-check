@@ -1,6 +1,9 @@
 import praw
 import os 
 from dotenv import load_dotenv
+from flask import Blueprint
+
+reddit = Blueprint("reddit", __name__)
 
 load_dotenv()
 
@@ -12,6 +15,7 @@ reddit_read_only = praw.Reddit(client_id=client_id,
                                 client_secret=client_secret,
                                 user_agent=user_agent)
 
+@reddit.route("/get-reddit-info")
 def getRedditInfo(url):
     submission = reddit_read_only.submission(url=url)
     redditInfo = {"title":submission.title, "selftext":submission.selftext, "comments":[]}

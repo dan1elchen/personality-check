@@ -1,6 +1,10 @@
 from reddit import *
-from sentimentanalysis import *
+from sentimentAnalysis import *
+from flask import Blueprint
 
+redditAnalysis = Blueprint("redditAnalysis", __name__)
+
+@redditAnalysis.route("/parse-reddit-post")
 def parseRedditPost(redditInfo):
     title_score = popularityScore(redditInfo["title"])
     selftext_score = popularityScore(redditInfo["selftext"])
