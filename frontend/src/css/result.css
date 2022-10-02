@@ -2,19 +2,37 @@
     text-align: center;
 }
 
-.profile-pic {
-    border-radius: 50%
-}
-
-.username {
+.output-header {
     font-weight: bold;
     font-family: "Georgia";
     font-size:40px;
     color: white;
 }
 
-.output {
+.info {
     font-family: Gill Sans, sans-serif;
     font-size:20px;
     color: white;
+}
+
+.display {
+    margin-left: 30px;
+}
+
+
+.text-info {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.neutral {
+    display: inline-block;
+}
+
+.negative {
+    display: inline-block;
+}
+
+.description {
+    font-style: italic;
 }
