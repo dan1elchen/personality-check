@@ -8,5 +8,13 @@
 
 .username {
     font-weight: bold;
-    font-family: "Georgia"
+    font-family: "Georgia";
+    font-size:40px;
+    color: white;
+}
+
+.output {
+    font-family: Gill Sans, sans-serif;
+    font-size:20px;
+    color: white;
 }

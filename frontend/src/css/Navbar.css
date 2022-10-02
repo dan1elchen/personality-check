@@ -1,0 +1,31 @@
+.Navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a0c293;
+    display: inline-block;
+    color: #000000;
+    font-weight:bold;
+    
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #a0c293;
+  }
+
+li a:hover {
+    background-color: #648b50;
+    color: white;
+}

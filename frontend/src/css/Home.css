@@ -1,0 +1,17 @@
+.header {
+    font-weight: bold;
+    font-family: "Georgia";
+    font-size:40px;
+    color: white;
+}
+
+.options {
+  margin-top: 10px
+}
+
+label {
+  font-size: 22px;
+  font-family: Gill Sans, sans-serif;
+  font-style: oblique;
+  color: white;
+}
