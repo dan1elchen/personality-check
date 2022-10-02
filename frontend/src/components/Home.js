@@ -7,8 +7,7 @@ function Home() {
     <div class="Home">
       <div class="header">
         <h1>Personality Check!</h1>
-        <br></br>
-        <img src="../assets/logo.png"></img>
+        <img src={require("../assets/reddit.png")} width="120px" height="120px" alt="Cannot Display"/>
         <br></br>
       </div>
       <div class="form">
@@ -22,7 +21,7 @@ function Home() {
       </div>
       <div class="options">
         <Link to="/result">
-          <button>Submit</button>
+          <button onClick={() => {}}>Submit</button>
         </Link>
       </div>
     </div>
