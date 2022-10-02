@@ -6,6 +6,16 @@ redditAnalysis = Blueprint("redditAnalysis", __name__)
 
 @redditAnalysis.route("/parse-reddit-post")
 def parseRedditPost(redditInfo):
+    """
+    Parameters
+    ----------
+    redditInfo - a dictionary in the form {'title':'Greetings', 'selfText':'hello', 'comments': ['hi','bye']}
+
+    Returns
+    --------
+
+
+    """
     title_score = popularityScore(redditInfo["title"])
     selftext_score = popularityScore(redditInfo["selftext"])
     comment_scores = [popularityScore(comment) for comment in redditInfo["comments"]]
@@ -17,4 +27,4 @@ def parseRedditPost(redditInfo):
     total_neu_score = title_score["neu"] * .25 + selftext_score["neu"] * .25 + comment_neu_score * .5
     total_pos_score = title_score["pos"] * .25 + selftext_score["pos"] * .25 + comment_pos_score * .5
 
-    return [total_neg_score, total_neu_score, total_pos_score]
+    return {"result": {"neg": total_neg_score, "neu": total_neu_score, "pos": total_pos_score}}

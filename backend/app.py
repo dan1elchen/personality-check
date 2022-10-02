@@ -15,3 +15,4 @@ app.register_blueprint(sentimentAnalysis)
 def hello_world():
     return "Hit!"
 # python3 -m flask run      
+# http://127.0.0.1:5000
